@@ -22,7 +22,8 @@ else
         {
             <tr>
                 <td>@customer.Id</td>
-                <td><a href='/@ViewBag.Title/Details/@customer.Id'>@customer.Name</a></td>
+                <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+
             </tr>
         }
 
