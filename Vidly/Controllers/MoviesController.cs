@@ -8,6 +8,13 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+
+        List<Movie> movies = new List<Movie>
+            {
+                new Movie { Name = "Movie 1", Id=1 },
+                new Movie { Name = "Movie 2", Id=2 }
+            };
+
         // GET: Movies
         public ActionResult Random()
         {
@@ -42,13 +49,23 @@ namespace Vidly.Controllers
             return View(viewModel);
         }
 
+        public ActionResult Index()
+        {
+            var viewModel = new MovieViewModel
+            {
+                Movies = movies
+            };
+
+            return View(viewModel);
+        }
+
         public ActionResult Edit(int id)
         {
             return Content("id=" + id);
         }
 
         //movies
-        public ActionResult Index(int? pageIndex, string sortBy)
+        public ActionResult Index2(int? pageIndex, string sortBy)
         {
             if (!pageIndex.HasValue)
                 pageIndex = 1;
@@ -63,6 +80,18 @@ namespace Vidly.Controllers
         public ActionResult ByReleaseDate(int year, int month)
         {
             return Content(year + "/" + month);
+        }
+
+        public ActionResult Details(int id)
+        {
+            try
+            {
+                return View(movies[id - 1]);
+            }
+            catch
+            {
+                return HttpNotFound();
+            }
         }
     }
 }
