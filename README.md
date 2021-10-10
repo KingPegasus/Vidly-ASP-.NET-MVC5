@@ -27,3 +27,4 @@ Vidly is an introductory project for ASP .NET Development.
 - https://stackoverflow.com/questions/51773602/asp-net-mvc-change-from-no-authentication-to-individual-user-accounts-on-ex
 - https://stackoverflow.com/questions/53509952/found-conflicts-between-different-versions-of-icsharpcode-sharpziplib-that-cou
 - https://stackoverflow.com/questions/20304058/how-to-re-create-database-for-entity-framework
+- https://stackoverflow.com/questions/1334012/cannot-insert-explicit-value-for-identity-column-in-table-table-when-identity

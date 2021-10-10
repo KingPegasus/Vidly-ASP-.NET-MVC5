@@ -201,9 +201,18 @@
     <Compile Include="Migrations\202110100818336_AddBirthDateToCustomer.designer.cs">
       <DependentUpon>202110100818336_AddBirthDateToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110100907530_AddAndPopulateMoviesTable.cs" />
+    <Compile Include="Migrations\202110100907530_AddAndPopulateMoviesTable.designer.cs">
+      <DependentUpon>202110100907530_AddAndPopulateMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110100922281_AddGenreToMovie.cs" />
+    <Compile Include="Migrations\202110100922281_AddGenreToMovie.designer.cs">
+      <DependentUpon>202110100922281_AddGenreToMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -310,9 +319,7 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModels\Account\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
@@ -337,6 +344,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202110100818336_AddBirthDateToCustomer.resx">
       <DependentUpon>202110100818336_AddBirthDateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110100907530_AddAndPopulateMoviesTable.resx">
+      <DependentUpon>202110100907530_AddAndPopulateMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110100922281_AddGenreToMovie.resx">
+      <DependentUpon>202110100922281_AddGenreToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
