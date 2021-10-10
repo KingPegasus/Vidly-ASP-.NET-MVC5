@@ -28,3 +28,6 @@ Vidly is an introductory project for ASP .NET Development.
 - https://stackoverflow.com/questions/53509952/found-conflicts-between-different-versions-of-icsharpcode-sharpziplib-that-cou
 - https://stackoverflow.com/questions/20304058/how-to-re-create-database-for-entity-framework
 - https://stackoverflow.com/questions/1334012/cannot-insert-explicit-value-for-identity-column-in-table-table-when-identity
+- https://www.compilemode.com/2015/09/how-to-change-actionlink-text-color-in-asp-net-mvc.html
+- https://stackoverflow.com/questions/1331779/conversion-of-a-datetime2-data-type-to-a-datetime-data-type-results-out-of-range
+- https://stackoverflow.com/questions/2965837/insert-statement-conflicted-with-the-foreign-key-constraint-sql-server
