@@ -11,6 +11,7 @@ namespace Vidly.Models
         public string Name { get; set; }
 
         [Display(Name = "Date of Release")]
+        [Required]
         public DateTime? ReleaseDate { get; set; }
 
         [Display(Name = "Date when Movie Added")]
@@ -18,12 +19,18 @@ namespace Vidly.Models
 
         [Display(Name = "Number of Stock")]
         [Required]
-        public int StockCount { get; set; }
+        [Range(1, 20)]
+        public byte StockCount { get; set; }
 
         public Genre Genre { get; set; }
 
         [Display(Name = "Genre")]
         [Required]
         public byte GenreId { get; set; }
+
+        public Movie()
+        {
+            ReleaseDate = DateTime.Parse("1/1/0001");
+        }
     }
 }

@@ -31,3 +31,4 @@ Vidly is an introductory project for ASP .NET Development.
 - https://www.compilemode.com/2015/09/how-to-change-actionlink-text-color-in-asp-net-mvc.html
 - https://stackoverflow.com/questions/1331779/conversion-of-a-datetime2-data-type-to-a-datetime-data-type-results-out-of-range
 - https://stackoverflow.com/questions/2965837/insert-statement-conflicted-with-the-foreign-key-constraint-sql-server
+- https://stackoverflow.com/questions/7637022/default-value-in-an-asp-net-mvc-view-model/7637050
