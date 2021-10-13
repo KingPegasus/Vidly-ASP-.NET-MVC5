@@ -3,7 +3,7 @@
 Vidly is an introductory project for ASP .NET Development.
 
 ## Tools, Packages and Languages Used
-- Microsoft Visual Studio Community 2019 (Version 16.11.4)
+- Microsoft Visual Studio Community 2019 (Version 16.11.5)
 - Microsoft ASP .NET MVC 5.2.7
 - Microsoft ASP .NET Razor 3.2.7
 - Microsoft ASP .NET Identity 2.2.3
@@ -11,6 +11,7 @@ Vidly is an introductory project for ASP .NET Development.
 - Microsoft Owin 4.2.0
 - Microsoft Sql Server Compact 4.0.8876.1
 - Microsoft Web Infrastructure 1.0.0
+- Microsoft Owin Security Facebook 4.2.0
 - EntityFramework 6.4.4
 - Bootstrap 3.4.1 with css lumen 3.3.6
 - jQuery 3.4.1
@@ -33,3 +34,6 @@ Vidly is an introductory project for ASP .NET Development.
 - https://stackoverflow.com/questions/2965837/insert-statement-conflicted-with-the-foreign-key-constraint-sql-server
 - https://stackoverflow.com/questions/7637022/default-value-in-an-asp-net-mvc-view-model/7637050
 - https://stackoverflow.com/questions/25377637/datatables-cannot-read-property-mdata-of-undefined
+- https://stackoverflow.com/questions/37063685/facebook-oauth-the-domain-of-this-url-isnt-included-in-the-apps-domain#
+- https://stackoverflow.com/questions/21295872/facebook-app-localhost-no-longer-works-as-app-domain
+
