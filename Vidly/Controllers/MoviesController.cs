@@ -57,7 +57,6 @@ namespace Vidly.Controllers
             return View(viewModel);
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Index()
         {
             //var movies = _context.Movies.Include(c => c.Genre).ToList();
@@ -116,6 +115,7 @@ namespace Vidly.Controllers
             };
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();
