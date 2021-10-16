@@ -1,12 +1,11 @@
 ﻿using AutoMapper;
 using System;
-using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Http;
 using Vidly.Dtos;
 using Vidly.Models;
-using System.Data.Entity;
 
 namespace Vidly.Controllers.Api
 {
