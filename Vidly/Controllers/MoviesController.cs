@@ -143,6 +143,8 @@ namespace Vidly.Controllers
             if (movie.Id == 0)
             {
                 movie.DateAdded = DateTime.Now;
+                if(movie.NumberAvailable == 0)
+                    movie.NumberAvailable = movie.StockCount;
                 _context.Movies.Add(movie);
             }
             else
@@ -151,6 +153,7 @@ namespace Vidly.Controllers
                 movieInDb.Name = movie.Name;
                 movieInDb.ReleaseDate = movie.ReleaseDate;
                 movieInDb.GenreId = movie.GenreId;
+                movieInDb.NumberAvailable += (byte)(movie.StockCount - movieInDb.StockCount);
                 movieInDb.StockCount = movie.StockCount;
             }
             _context.SaveChanges();

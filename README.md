@@ -17,6 +17,7 @@ Vidly is an introductory project for ASP .NET Development.
 - jQuery 3.4.1
 - Owin 1.0.0
 - WebGrease 1.6.0
+- Toastr 2.1.1
 
 ### Target FrameWork
 - .NETFramework 4.7.2
