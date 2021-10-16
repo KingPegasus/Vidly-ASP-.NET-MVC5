@@ -18,6 +18,7 @@ Vidly is an introductory project for ASP .NET Development.
 - Owin 1.0.0
 - WebGrease 1.6.0
 - Toastr 2.1.1
+- Elmah 1.2.2
 
 ### Target FrameWork
 - .NETFramework 4.7.2
@@ -37,4 +38,5 @@ Vidly is an introductory project for ASP .NET Development.
 - https://stackoverflow.com/questions/25377637/datatables-cannot-read-property-mdata-of-undefined
 - https://stackoverflow.com/questions/37063685/facebook-oauth-the-domain-of-this-url-isnt-included-in-the-apps-domain#
 - https://stackoverflow.com/questions/21295872/facebook-app-localhost-no-longer-works-as-app-domain
-
+- https://stackoverflow.com/questions/61499714/glimpse-aspnet-pdb-not-loaded
+- https://stackoverflow.com/questions/1331779/conversion-of-a-datetime2-data-type-to-a-datetime-data-type-results-out-of-range/1332513#1332513
