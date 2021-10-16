@@ -7,6 +7,7 @@ namespace Vidly.Controllers
     {
         public ActionResult Index()
         {
+            throw new System.Exception();
             return View();
         }
 
