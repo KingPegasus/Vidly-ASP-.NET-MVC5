@@ -28,7 +28,7 @@ namespace Vidly.Controllers.Api
 
 
             var movies = _context.Movies.Where(
-                m => newRental.MoviesIds.Contains(m.Id)).ToList();
+                m => newRental.MovieIds.Contains(m.Id)).ToList();
 
             foreach (var movie in movies)
             {
