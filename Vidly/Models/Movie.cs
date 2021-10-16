@@ -28,6 +28,8 @@ namespace Vidly.Models
         [Required]
         public byte GenreId { get; set; }
 
+        public byte NumberAvailable { get; set; }
+
         public Movie()
         {
             ReleaseDate = DateTime.Parse("1/1/0001");
