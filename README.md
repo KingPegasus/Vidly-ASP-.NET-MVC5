@@ -40,3 +40,4 @@ Vidly is an introductory project for ASP .NET Development.
 - https://stackoverflow.com/questions/21295872/facebook-app-localhost-no-longer-works-as-app-domain
 - https://stackoverflow.com/questions/61499714/glimpse-aspnet-pdb-not-loaded
 - https://stackoverflow.com/questions/1331779/conversion-of-a-datetime2-data-type-to-a-datetime-data-type-results-out-of-range/1332513#1332513
+- https://stackoverflow.com/questions/49347392/to-do-list-delete-button-within-html-li-element/49347736

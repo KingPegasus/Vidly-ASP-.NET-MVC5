@@ -17,12 +17,12 @@
     <div class="form-group">
         <label>Movie</label>
         <div class="tt-container">
-            <input id="movie" name="movie" data-rule-atLeastOneMovie="true"  type="text" value="" class="form-control" />
+            <input id="movie" name="movie" data-rule-atLeastOneMovie="true" data-rule-maxFiveMovies="true" type="text" value="" class="form-control" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-4 col-sm-4">
-            <ul id="movies" class="list-group"></ul>
+            <ul id="movies" class="list-group"></ul>          
         </div>
     </div>
 
@@ -79,11 +79,23 @@
                 source: movies,
                 limit: 20
             }).on("typeahead:select", function (e, movie) {
-                $("#movies").append("<li class='list-group-item'>" + movie.name + "</li>");
+                $("#movies").append("<li class='list-group-item'>" + movie.name + "<button style='float: right;'>Delete</button></li>");
 
                 $("#movie").typeahead("val", "");
 
                 vm.movieIds.push(movie.id);
+            });
+
+            $('#movies').on('click', 'li > button', function () {
+                var listButton = $(this);
+
+                listButton.parent().animate({
+                    opacity: 0.0,
+                    paddingLeft: '+=180'
+                }, 500, 'swing', function () {
+                    listButton.parent().remove();
+                });
+
             });
 
             $.validator.addMethod("validCustomer", function () {
@@ -93,6 +105,10 @@
             $.validator.addMethod("atLeastOneMovie", function () {
                 return vm.movieIds.length > 0;
             }, "Please select at least one movie.");
+
+            $.validator.addMethod("maxFiveMovies", function () {
+                return vm.movieIds.length < 6;
+            }, "Please select at max five movies.");
 
             var validator = $("#newRental").validate({
                 submitHandler: function () {
